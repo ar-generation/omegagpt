@@ -64,7 +64,7 @@ const WhyOfflineSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-14"
         >
-          <h2 className="font-display text-3xl sm:text-4xl font-semibold text-foreground mb-3">
+          <h2 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-3">
             Why <span className="text-gradient-omega">OmegaGPT</span>?
           </h2>
           <p className="text-muted-foreground text-base">

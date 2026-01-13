@@ -42,8 +42,8 @@ const HeroSection = () => {
             </motion.div>
 
             {/* Headline - 2 lines */}
-            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-[1.05] tracking-tight">
-              <span className="omega-symbol">Ω</span>megaGPT
+            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-[1.05] tracking-tight">
+              <span className="text-foreground"><span className="text-gradient-omega">Ω</span>megaGPT</span>
               <br />
               <span className="text-gradient-omega">Offline AI Chat</span>
             </h1>
