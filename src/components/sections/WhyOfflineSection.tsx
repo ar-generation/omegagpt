@@ -51,28 +51,28 @@ const item = {
 
 const WhyOfflineSection = () => {
   return (
-    <section id="why-omegagpt" className="py-28 relative">
+    <section id="why-omegagpt" className="py-24 relative">
       {/* Subtle background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/5 to-transparent" />
 
       <div className="container mx-auto px-6 relative z-10">
-        {/* Section Header - clearly secondary to hero */}
+        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-14"
         >
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-foreground mb-3">
+          <h2 className="font-display text-3xl sm:text-4xl font-semibold text-foreground mb-3">
             Why <span className="text-gradient-omega">OmegaGPT</span>?
           </h2>
-          <p className="text-muted-foreground text-sm">
+          <p className="text-muted-foreground text-base">
             AI that respects your privacy
           </p>
         </motion.div>
 
-        {/* Feature Grid - cleaner, more space */}
+        {/* Feature Grid */}
         <motion.div
           variants={container}
           initial="hidden"
@@ -84,15 +84,15 @@ const WhyOfflineSection = () => {
             <motion.div
               key={index}
               variants={item}
-              className="bg-card/50 border border-border/30 rounded-xl p-5 text-center hover:border-border/50 transition-colors"
+              className="bg-card/60 border border-border/40 rounded-xl p-6 text-center hover:border-primary/30 transition-colors"
             >
-              <div className="w-9 h-9 mx-auto rounded-lg bg-muted/50 flex items-center justify-center mb-3">
-                <advantage.icon className="w-4 h-4 text-foreground/70" />
+              <div className="w-10 h-10 mx-auto rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                <advantage.icon className="w-5 h-5 text-primary" />
               </div>
-              <h3 className="font-display font-medium text-foreground text-sm mb-1">
+              <h3 className="font-display font-semibold text-foreground text-base mb-2">
                 {advantage.title}
               </h3>
-              <p className="text-xs text-muted-foreground leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 {advantage.description}
               </p>
             </motion.div>
@@ -105,7 +105,7 @@ const WhyOfflineSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4, delay: 0.2 }}
-          className="text-center text-muted-foreground/70 text-xs mt-10"
+          className="text-center text-muted-foreground text-sm mt-10"
         >
           AI for everyone — accessible regardless of location or income
         </motion.p>

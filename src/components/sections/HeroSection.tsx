@@ -22,7 +22,7 @@ const HeroSection = () => {
       <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-omega-glow/8 rounded-full blur-[100px] z-0" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -35,21 +35,21 @@ const HeroSection = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4 }}
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-muted/50 border border-border/50 mb-8"
+              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-muted/50 border border-border/50 mb-6"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-primary/70" />
               <span className="text-xs text-muted-foreground">Free During Early Access</span>
             </motion.div>
 
-            {/* Dominant headline */}
-            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-8 leading-[1.1] tracking-tight">
+            {/* Dominant headline - larger */}
+            <h1 className="font-display text-6xl sm:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-[1.05] tracking-tight">
               <span className="omega-symbol">Ω</span>megaGPT
               <br />
               <span className="text-gradient-omega">Offline AI Chat</span>
             </h1>
 
-            {/* Simple, single-sentence subheadline */}
-            <p className="text-lg text-muted-foreground mb-10 max-w-md mx-auto lg:mx-0 leading-relaxed">
+            {/* Simple, single-sentence subheadline - larger */}
+            <p className="text-xl sm:text-2xl text-muted-foreground mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">
               Private AI that runs entirely on your device.
             </p>
 
@@ -57,19 +57,19 @@ const HeroSection = () => {
             <StoreButtons size="large" className="justify-center lg:justify-start" />
           </motion.div>
 
-          {/* Phone Mockup - reduced prominence */}
+          {/* Phone Mockup - closer to text */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="relative flex justify-center lg:justify-end"
+            className="relative flex justify-center lg:justify-start"
           >
             <div className="relative">
               {/* Subtle glow behind phone */}
               <div className="absolute inset-0 bg-gradient-to-t from-omega-glow/15 via-omega-purple/10 to-transparent blur-3xl scale-105" />
               
-              {/* Phone frame - slightly smaller */}
-              <div className="relative w-56 sm:w-64 animate-float opacity-90">
+              {/* Phone frame */}
+              <div className="relative w-56 sm:w-64 animate-float">
                 <div className="bg-gradient-to-b from-zinc-700 to-zinc-900 rounded-[2.5rem] p-1.5 shadow-xl">
                   <div className="bg-background rounded-[2rem] overflow-hidden relative">
                     {/* Notch */}
