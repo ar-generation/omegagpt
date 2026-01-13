@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import StoreButtons from "../StoreButtons";
 import heroBg from "@/assets/hero-bg.jpg";
+import appScreenshot from "@/assets/app-screenshot.jpg";
 
 const HeroSection = () => {
   return (
@@ -39,17 +40,6 @@ const HeroSection = () => {
               <span className="text-sm text-primary font-medium">Free During Early Access</span>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-omega-glow/10 border border-omega-glow/30 mb-6 ml-2"
-            >
-              <svg className="w-4 h-4 text-omega-glow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-              </svg>
-              <span className="text-sm text-omega-glow font-medium">FIRST Fully Offline AI Chat on iOS & Android</span>
-            </motion.div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               <span className="omega-symbol">Ω</span>megaGPT
@@ -90,54 +80,19 @@ const HeroSection = () => {
               {/* Glow behind phone */}
               <div className="absolute inset-0 bg-gradient-to-t from-omega-glow/30 via-omega-purple/20 to-transparent blur-3xl scale-110" />
               
-              {/* Phone frame */}
+              {/* Phone frame with real screenshot */}
               <div className="relative w-64 sm:w-72 animate-float">
                 <div className="bg-gradient-to-b from-zinc-700 to-zinc-900 rounded-[3rem] p-2 shadow-2xl">
                   <div className="bg-background rounded-[2.5rem] overflow-hidden relative">
                     {/* Notch */}
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-background rounded-b-2xl z-10" />
                     
-                    {/* Screen content */}
-                    <div className="aspect-[9/19] bg-gradient-to-b from-omega-dark to-omega-card p-4 pt-8">
-                      {/* Header */}
-                      <div className="flex items-center justify-between mb-4">
-                        <span className="text-xs text-muted-foreground">Offline GPT Chat</span>
-                        <div className="flex items-center gap-1">
-                          <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                          <div className="w-1.5 h-1.5 rounded-full bg-muted-foreground/50" />
-                        </div>
-                      </div>
-
-                      {/* Chat messages */}
-                      <div className="space-y-3">
-                        <div className="bg-omega-purple/20 rounded-2xl rounded-tl-sm p-3 max-w-[85%]">
-                          <p className="text-xs text-foreground">What's the best way to learn a new language?</p>
-                        </div>
-                        <div className="bg-muted/50 rounded-2xl rounded-tr-sm p-3 ml-auto max-w-[85%]">
-                          <p className="text-xs text-foreground leading-relaxed">
-                            Here are proven methods for language learning:
-                            <br /><br />
-                            1. Immersion - surround yourself with the language
-                            <br />
-                            2. Practice daily, even just 15 minutes
-                            <br />
-                            3. Focus on high-frequency vocabulary first...
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Input */}
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <div className="bg-muted/50 rounded-full px-4 py-2.5 flex items-center gap-2">
-                          <span className="text-xs text-muted-foreground flex-1">Enter Message...</span>
-                          <div className="w-6 h-6 rounded-full bg-primary/80 flex items-center justify-center">
-                            <svg className="w-3 h-3 text-primary-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    {/* Screen content - real screenshot */}
+                    <img 
+                      src={appScreenshot} 
+                      alt="OmegaGPT app interface showing AI chat conversation" 
+                      className="w-full aspect-[9/19] object-cover object-top"
+                    />
                   </div>
                 </div>
               </div>
