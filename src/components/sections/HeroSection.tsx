@@ -21,8 +21,8 @@ const HeroSection = () => {
       <div className="absolute top-1/3 left-1/4 w-72 h-72 bg-omega-purple/15 rounded-full blur-[120px] z-0" />
       <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-omega-glow/8 rounded-full blur-[100px] z-0" />
 
-      <div className="container mx-auto px-6 relative z-10 max-w-5xl">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="container mx-auto px-8 lg:px-12 relative z-10 max-w-5xl">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -57,12 +57,12 @@ const HeroSection = () => {
             <StoreButtons size="large" className="justify-center lg:justify-start" />
           </motion.div>
 
-          {/* Phone Mockup - closer to text */}
+          {/* Phone Mockup */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="relative flex justify-center lg:justify-start"
+            className="relative flex justify-center lg:justify-end"
           >
             <div className="relative">
               {/* Subtle glow behind phone */}
