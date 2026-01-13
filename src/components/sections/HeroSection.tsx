@@ -48,9 +48,9 @@ const HeroSection = () => {
               <span className="text-gradient-omega">Offline AI Chat</span>
             </h1>
 
-            {/* Simple, single-sentence subheadline - larger */}
+            {/* Simple, single-sentence subheadline */}
             <p className="text-xl sm:text-2xl text-muted-foreground mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-              Private AI that runs entirely on your device.
+              Fast, Free AI Chat — 100% Offline
             </p>
 
             {/* Prominent CTA buttons */}
