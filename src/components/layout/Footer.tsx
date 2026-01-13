@@ -23,14 +23,14 @@ const Footer = () => {
             <h4 className="font-display font-semibold text-foreground mb-4">Legal</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="https://ar-generation.com/omega-gpt/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Privacy Policy
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="https://ar-generation.com/omega-gpt/terms-of-use.html" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Terms of Use
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
