@@ -21,16 +21,6 @@ const Header = () => {
           </a>
         </nav>
 
-        <div className="flex items-center gap-3">
-          <a
-            href="https://apps.apple.com/us/app/omegagpt-offline-ai-chat/id6751235569"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
-          >
-            Download
-          </a>
-        </div>
       </div>
     </motion.header>
   );
