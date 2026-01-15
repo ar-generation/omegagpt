@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import StoreButtons from "../StoreButtons";
 import heroBg from "@/assets/hero-bg.jpg";
 import appScreenshot from "@/assets/app-screenshot.jpg";
+import omegaSymbol from "@/assets/omega-symbol.png";
 
 const HeroSection = () => {
   return (
@@ -43,7 +44,7 @@ const HeroSection = () => {
 
             {/* Headline - 2 lines */}
             <h1 className="font-display text-[2.75rem] sm:text-6xl lg:text-7xl font-bold mb-6 leading-[1.05] tracking-tight whitespace-nowrap">
-              <span className="text-foreground"><span className="text-gradient-omega">Ω</span>megaGPT</span>
+              <span className="text-foreground inline-flex items-baseline"><img src={omegaSymbol} alt="Ω" className="h-[0.85em] w-auto inline-block align-baseline -mb-1" />megaGPT</span>
               <br />
               <span className="text-gradient-omega">Offline AI Chat</span>
             </h1>
