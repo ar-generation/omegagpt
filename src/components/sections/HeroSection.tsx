@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import StoreButtons from "../StoreButtons";
 import heroBg from "@/assets/hero-bg.jpg";
 import appScreenshot from "@/assets/app-screenshot.jpg";
-import omegaLogo from "@/assets/omegagpt-logo.png";
+import omegaSymbol from "@/assets/omega-letter.png";
 
 const HeroSection = () => {
   return (
@@ -45,7 +45,7 @@ const HeroSection = () => {
             {/* Headline - 2 lines */}
             <h1 className="font-display text-[2.75rem] sm:text-6xl lg:text-7xl font-bold mb-6 leading-[1.05] tracking-tight whitespace-nowrap">
               <span className="text-foreground inline-flex items-baseline">
-                <img src={omegaLogo} alt="" className="h-[0.85em] w-auto inline-block align-baseline mr-0.5" />
+                <img src={omegaSymbol} alt="" className="h-[0.85em] w-auto inline-block align-baseline mr-0.5" />
                 <span>megaGPT</span>
               </span>
               <br />
